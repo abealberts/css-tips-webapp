@@ -5,8 +5,8 @@
 }
 
 * {
-    margin: 4px 2px;
-    padding: 4px 2px;
+    margin: 4px 4px;
+    padding: 4px 4px;
 }
 
 body {
@@ -28,13 +28,6 @@ header p {
     max-width: 80%;
     margin: auto;
 }
-pre {
-
-
-
-
-    border:none;
-}
 
 footer {
     text-align: center;
@@ -47,6 +40,7 @@ footer {
     margin-top: 30px;
 
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -67,7 +61,6 @@ footer {
 }
 
 .snippet p {
-    margin-top: 30px;
     font-size: small;
     color: var(--pink);
     text-align: left;
@@ -81,15 +74,14 @@ footer {
 
     padding: 6px 8px;
 
-    min-width: 94%;
+    min-width: 80%;
 
     border: solid 2px var(--grey);
     border-radius: 8px;
     background-color: var(--slate);
 
-    position: absolute;
-    left: 2%;
-    top:-20px;
+    position: relative;
+    margin-top:-20px;
 }
 
 .snippet-code {
@@ -103,6 +95,4 @@ footer {
     max-height: fit-content;
     background-image: linear-gradient(#fb5efb49, #fb5efbc5);
     border-radius: 8px;
-
-    border: none;
 }
